@@ -21,8 +21,8 @@ Flask isn't used directly, though, but in combination with a threading.Thread fu
 
 This program makes use of multiple folder to store programs and additional files, which are referenced in the import section. In addition, Repl.it's file management system assumes the directory that contains main.py to be associated with the main directory, so writing the full path of a file or script is not required. As I continue to import my files for backup I'll also be creating new folders to host them.
 
-'TOKEN = os.environ.get('DISCORD_TOKEN')'
+`TOKEN = os.environ.get('DISCORD_TOKEN')`
 
-'GUILD = os.environ.get('DISCORD_GUILD')'
+`GUILD = os.environ.get('DISCORD_GUILD')`
 
 This program makes use of the environmental variable system to retrieve secret variables and values. These are stored in a hidden .env file that hopefully will not be visible to anyone outside yours truly. This variables contain information needed to create a connection between the program and the application instance on Discord.
